@@ -19,3 +19,9 @@ variable "zone_id" {
   type        = string
   description = "The ID of the Route 53 hosted zone corresponding to the top level domain name"
 }
+
+variable "tags" {
+  type        = map
+  description = "A map of tags to assign to the certificate"
+  default     = {}
+}
