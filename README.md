@@ -4,11 +4,11 @@ Terraform module which creates ACM certificates and automatically validates them
 ## Usage
 ```hcl
 module "certificate" {
-  source  = "stuartizon/certificate/aws"
+  source = "stuartizon/certificate/aws"
   version = "~> 0.1.2"
   domain_name = "example.com"
   subject_alternative_names = ["www.example.com"]
-  zone_id     = "ZAAAAAAAAAAAAA"
+  zone_id = "ZAAAAAAAAAAAAA"
   ttl = 60
   tags = {
     Environment = "Staging"
